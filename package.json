@@ -1,6 +1,6 @@
 {
   "name": "express-route-params",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Express route param validation with regexp or function",
   "main": "index.js",
   "scripts": {
