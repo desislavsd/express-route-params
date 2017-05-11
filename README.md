@@ -13,10 +13,14 @@ The package is automatically applied as soon as you `require` it into you projec
 
 // require the package before the app is created
 var params = require('express-route-params'),
-	app = require('express')();
-
-// now you can apply validation to your route params
-
+    app = require('express')();
+```
+or even:
+```javascript
+var app = require('express-route-params').express();
+```
+now you can apply validation to your route params:
+```javascript
 app.param('name', /^[a-z]+$/i)
    .param(['id', 'age'], parseInt)
 
